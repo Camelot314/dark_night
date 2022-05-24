@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Dark Night",
+    "version": "1.0",
+    "description": "Turns the background color of pages to black or grey",
+    "icons": {
+        "48": "icons/dark_night_icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.google.com/*"
+            ],
+            "js": [
+                "night.js"
+            ]
+        }
+    ]
+}
