@@ -9,7 +9,7 @@
     "content_scripts": [
         {
             "matches": [
-                "*://*.google.com/*"
+                "<all_urls>"
             ],
             "js": [
                 "night.js"
