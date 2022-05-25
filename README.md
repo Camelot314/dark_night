@@ -21,7 +21,7 @@ This was made to experiment and learn some `javascript`
 
 ### Veiwing Console Outputs
 
-- background script output - Click `inspect` next to the temporary extension in the `about:debugging` page
+- background script output - Click `inspect` next to the temporary extension in the `about:debugging` page.
 - content script output - On a page right click and click `inspect` to view the console.
 
 ## Files and Explanations
