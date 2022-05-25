@@ -1,4 +1,5 @@
 "use strict";
+// strict typing
 
 // function that handles errors (just prints)
 function onError(error) {

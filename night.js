@@ -23,25 +23,26 @@ function getContentTag() {
     It will return an object with the three colors saved.
     It one of the above tags are missing then that respective color will be
     set to null. 
+    It will also save the body font color.
 */
 function readInitial() {
     let bodyColor = window.getComputedStyle(document.body).backgroundColor;
     let mainColor = null;
     let contentColor = null;
+    let fontColor = window.getComputedStyle(document.body).color;
 
     let mainTag = getMainTag();
     if (mainTag != null) {
         mainColor = window.getComputedStyle(mainTag).backgroundColor;
-        // console.log("mainColor: ", mainColor);
     }
 
     let content = getContentTag();
     if (content != null) {
         contentColor = window.getComputedStyle(content).backgroundColor;
-        // console.log("content color: ", contentColor);
     }
-    // console.log({b: bodyColor, m: mainColor, c: contentColor});
-    return {b: bodyColor, m: mainColor, c: contentColor}
+
+
+    return {b: bodyColor, m: mainColor, c: contentColor, f: fontColor}
 }
 
 /* 
@@ -55,6 +56,7 @@ function nightMode() {
     let contentTag = getContentTag();
 
     document.body.style.backgroundColor = 'black';
+    document.body.style.color = "rgb(255,77,255)"; // very pink
 
     if (mainTag != null) {
         mainTag.style.backgroundColor = 'black';
@@ -74,6 +76,7 @@ function nightMode() {
 function resetColors(colors) {
     console.log("resetting");
     document.body.style.backgroundColor = colors.b;
+    document.body.style.color = colors.f;
 
     if (colors.m != null) {
         let mainTag = getMainTag();
@@ -84,6 +87,8 @@ function resetColors(colors) {
         let contentTag = getContentTag();
         contentTag.style.backgroundColor = colors.c;
     }
+    /* can also reload the page with the following but it's slow */
+    // window.location.reload();
 }
 
 function main() {
@@ -106,14 +111,6 @@ function main() {
         tooltip button is pressed)
         
         If active then it will turn the page to dark mode. Else reset it.
-
-        TODO:
-        setting the background color of the 'main' object. This is a common
-        object that may be present over the body.
-        
-        TODO:
-        setting the backgroud color of the object with id 'content'. This is
-        the scheme used by stack overflow so it may also be a common method. 
     */
     function night() {
         active = !active;

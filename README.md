@@ -1,17 +1,20 @@
 # Dark Night Extension
 
+## Functionality
+
 Firefox extension.
-<br>
 The goal is change all websites to dark mode when enabled.
+<br>
+This was made to experiment and learn some `javascript`
 
 > **Note** <br>
-> If the website has a darkmode feature it will not be enabled. The extention just changes the background color of the html.
-
-This was made to experiment and learn some `javascript`
+>
+> - If the website has a darkmode feature it will not be enabled. The extention just changes the background color of the html.
+> - It does not work on all websites. Only those relatively simple and standard html elements (such as main or content tags). The internet is a messy place.
 
 ## Running and Debugging
 
-1. Open FireFox and navigate to
+1. Open FireFox and navigate to:
    ```
    about:debugging
    ```
