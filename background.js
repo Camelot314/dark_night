@@ -7,12 +7,12 @@ function onError(error) {
 
 
 /* 
-    main function that is run every time that the
+    onClick function that is run every time that the
     toolbar button is run. It will check all the tabs
     that are active and in the window. It will then 
     call the send Messge function 
 */
-function main() {
+function onClick() {
     console.log("button was clicked");
     browser.tabs.query({
         currentWindow: true,
@@ -50,9 +50,15 @@ function sendMessageToTabs(tabs) {
     }
 }
 
-// adding a listener that will run the main function every time the button toolbar
-// button is pressed. 
-browser.browserAction.onClicked.addListener(main);
+// main function.
+function main() {
+    // adding a listener that will run the main function every time the button toolbar
+    // button is pressed. 
+    browser.browserAction.onClicked.addListener(onClick);
+}
+
+
+main()
 
 
   
