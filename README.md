@@ -19,6 +19,9 @@ This was made to experiment and learn some `javascript`
 3. Click `Load Temporary Add-on...`
    add any file in the root directory of the extention.
 
+> **Note** <br>
+> The extension will be automatically unloaded when firefox is restarted.
+
 ### Veiwing Console Outputs
 
 - background script output - Click `inspect` next to the temporary extension in the `about:debugging` page.
