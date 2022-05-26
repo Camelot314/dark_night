@@ -12,6 +12,8 @@ This was made to experiment and learn some `javascript`
 > - If the website has a darkmode feature it will not be enabled. The extention just changes the background color of the html.
 > - It does not work on all websites. Only those relatively simple and standard html elements (such as main or content tags). The internet is a messy place.
 
+![Dark Night Example](assets/dark_night_example.gif)
+
 ## Running and Debugging
 
 1. Open FireFox and navigate to:
