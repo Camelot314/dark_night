@@ -7,12 +7,16 @@ The goal is change all websites to dark mode when enabled.
 <br>
 This was made to experiment and learn some `javascript`
 
+![Dark Night Example](assets/dark_night_example.gif)
+
 > **Note** <br>
 >
 > - If the website has a darkmode feature it will not be enabled. The extention just changes the background color of the html.
 > - It does not work on all websites. Only those relatively simple and standard html elements (such as main or content tags). The internet is a messy place.
 
-![Dark Night Example](assets/dark_night_example.gif)
+## Installing
+
+Available at: [TBD](https://jaraadkamal.com)
 
 ## Running and Debugging
 
