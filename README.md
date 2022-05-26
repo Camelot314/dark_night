@@ -21,6 +21,7 @@ Available at: [TBD](https://jaraadkamal.com)
 ## Running and Debugging
 
 1. Open FireFox and navigate to:
+   <br><br>
    ```
    about:debugging
    ```
