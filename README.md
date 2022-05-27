@@ -1,4 +1,4 @@
-# Dark Night Extension
+# Dark Night FireFox Extension
 
 ## Functionality
 
@@ -16,7 +16,7 @@ This was made to experiment and learn some `javascript`
 
 ## Installing
 
-Available at: [TBD](https://jaraadkamal.com)
+Available at: https://addons.mozilla.org/addon/dark-night-forcing-dark-mode/
 
 ## Running and Debugging
 
